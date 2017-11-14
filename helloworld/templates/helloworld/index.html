@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="jp">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'helloworld/base.html' %}
+{% block body %}
+
 {% for list in lists %}
 <p>{{ list.word_text }}</p>
 {% endfor %}
-</body>
-</html>
+
+{% endblock %}
